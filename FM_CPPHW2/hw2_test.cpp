@@ -39,7 +39,7 @@ int main()
 		int base, foreign;
 		double base_amount, foreign_amount;
 		//get the information for the base and foreign currency
-		cout << "Please enter the base currency" << endl;
+		cout << "Please enter base currency" << endl;
 		cout << "Available Currencies are: " << endl;
 		cout << " USD = 0, EUR = 1, GBP = 2, CAD = 3, AUD = 4, JPY = 5, RMB = 6 " << endl;
 		cin >> base;
