@@ -35,7 +35,7 @@ public:
 	//calculating functions
 	//ouble ConvertToUSD(double amount);
 	//conversion main
-	double Convert( Currency foreign, double amount);
+	double Convert( Currency& foreign, double amount);
 	double ConvertFromUSD(double amount);
 	double ConvertToUSD(double amount);
 	

@@ -49,7 +49,7 @@ double Currency::ConvertToUSD(double amount)
 {
 	return amount / exchangeRate_;
 }
-double Currency::Convert(Currency foreign, double amount)
+double Currency::Convert(Currency& foreign, double amount)
 {
 	return foreign.ConvertFromUSD(this->ConvertToUSD(amount));
 }
