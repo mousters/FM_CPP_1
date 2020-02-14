@@ -17,3 +17,11 @@ Currency* CurrencyFactory::GetCurrency(int currencyType)
 {
 	return currencies_[currencyType];
 }
+//destructor
+CurrencyFactory::~CurrencyFactory()
+{
+	for (int i = 0; i < 7; i++)
+	{
+		delete currencies_[i];
+	}
+}

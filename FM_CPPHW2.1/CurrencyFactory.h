@@ -10,6 +10,8 @@ class CurrencyFactory
 public:
 	CurrencyFactory();
 	Currency* GetCurrency(int currencyType);
+	//destructor
+	~CurrencyFactory();
 private:
 	Currency* currencies_[7];
 

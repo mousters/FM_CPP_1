@@ -124,6 +124,7 @@
     <ClInclude Include="Point.h" />
     <ClInclude Include="Prime.h" />
     <ClInclude Include="Sorter.h" />
+    <ClInclude Include="Stock.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Babylonian.cpp" />
@@ -132,6 +133,7 @@
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Prime.cpp" />
     <ClCompile Include="Sorter.cpp" />
+    <ClCompile Include="Stock.cpp" />
     <ClCompile Include="testing.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

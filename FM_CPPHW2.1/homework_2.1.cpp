@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+	CurrencyFactory curr_fac;
 	string check = "1";
 	while (check != "0")
 	{
@@ -21,7 +22,7 @@ int main()
 		cin >> foreign;
 		cout << "Please enter the amount in base currency" << endl;
 		cin >> base_amount;
-		CurrencyFactory curr_fac;
+		
 		Currency* base_curr = curr_fac.GetCurrency(base);
 		Currency* foreign_curr= curr_fac.GetCurrency(foreign);
 
