@@ -1,5 +1,3 @@
-#pragma once
-
 #ifndef Currency_H
 #define Currency_H
 #include <string>
