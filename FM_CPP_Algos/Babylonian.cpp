@@ -11,7 +11,7 @@ Babylonian::Babylonian(): x_(0),S_(0),iter_(0){}
 //constructor
 Babylonian::Babylonian(int val)
 {
-	x_ = std::to_string(val).length()*100;
+	x_ = static_cast<double>(std::to_string(val).length())*100;
 	S_ = val;
 	iter_ = 5;
 }

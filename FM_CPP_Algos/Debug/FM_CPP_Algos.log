@@ -1,2 +1,11 @@
-﻿  testing.cpp
-  FM_CPP_Algos.vcxproj -> C:\Users\David Mou\Desktop\GITHUB\FM_CPP_1\Debug\FM_CPP_Algos.exe
+﻿  Babylonian.cpp
+  Circle.cpp
+  Fibonacci.cpp
+  Point.cpp
+  Prime.cpp
+  Sorter.cpp
+C:\Users\david\Desktop\GITHUB\FM_CPP_1\FM_CPP_Algos\Sorter.cpp(15,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Stock.cpp
+  testing.cpp
+  Generating Code...
+  FM_CPP_Algos.vcxproj -> C:\Users\david\Desktop\GITHUB\FM_CPP_1\Debug\FM_CPP_Algos.exe

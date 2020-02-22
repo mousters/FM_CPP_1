@@ -10,6 +10,7 @@ public:
 	~Fibonacci();
 	void compute_fib();
 	void sum_and_print();
+	
 	int index;
 	//setter
 	void set_first(int val);

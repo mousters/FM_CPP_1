@@ -2,11 +2,17 @@
 #define Sorter_H
 #include <iostream>
 using namespace std; 
-class Sorter 
+
+class Sorter
 {
+public:
 	Sorter();
-	Sorter(double param[])
-}
+	static void swap(double* a, double* b);
+	static void bubblesort();
+	static double arr[];
+	static int n;
+	static void print_array();
+};
 
 
 

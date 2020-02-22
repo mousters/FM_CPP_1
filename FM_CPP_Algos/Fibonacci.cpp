@@ -22,14 +22,21 @@ void Fibonacci::set_second(int val) { second_ = val; }
 void Fibonacci::set_index(int val) { index = val; }
 void Fibonacci::sum_and_print()
 {
-
 	if (cnt_ == 0)
 	{
-		cout << 0 << "  "<< 1<<"  ";
+		cout << 0 <<" ";
 	}
-	int temp = second_ + first_;
-	cout << temp << "  ";
-	Fibonacci::set_first(second_);
-	Fibonacci::set_second(temp);
+	else if (cnt_ == 1)
+	{
+		cout << 1<<" ";
+	}
+	else
+	{
+		int temp = second_ + first_;
+		cout << temp << "  ";
+		Fibonacci::set_first(second_);
+		Fibonacci::set_second(temp);
+	}
+	
 	cnt_++;
 }
