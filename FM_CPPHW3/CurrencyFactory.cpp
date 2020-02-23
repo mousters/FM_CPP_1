@@ -9,17 +9,26 @@ CurrencyFactory::CurrencyFactory()
 	/*
 	change #4 freestore objects
 	*/
-	currencies_[USD] = new Currency("USD", 1.0);
-	currencies_[EUR] = new Currency("USD", 0.9);
-	currencies_[GBP] = new Currency("USD", 0.77);
-	currencies_[CAD] = new Currency("USD", 1.31);
-	currencies_[AUD] = new Currency("USD", 1.45);
-	currencies_[JPY] = new Currency("USD", 109);
-	currencies_[RMB] = new Currency("USD", 6.9);
+	/*
+	change #2, new currencyfactory constructor
+	*/
+	currencies_[0] = new Currency("USD", 1.0);
+	currencies_[1] = new Currency("USD", 0.9);
+	currencies_[2] = new Currency("USD", 0.77);
+	currencies_[3] = new Currency("USD", 1.31);
+	currencies_[4] = new Currency("USD", 1.45);
+	currencies_[5] = new Currency("USD", 109);
+	currencies_[6] = new Currency("USD", 6.9);
 }
-Currency* CurrencyFactory::GetCurrency(int currencyType)
+Currency* CurrencyFactory::GetCurrency(int currency_num)
 {
-	return currencies_[currencyType];
+	auto iter = currencies_.find(currency_num);
+	if (iter == currencies_.end())
+	{
+		throw std::runtime_error("Currency Not Found");
+	}
+	//return currencies_[currency_num];
+	return iter->second;
 }
 //destructor
 CurrencyFactory::~CurrencyFactory()
@@ -27,8 +36,8 @@ CurrencyFactory::~CurrencyFactory()
 	/*
 		change #5 delete free store objects to prevent memory leak
 	*/
-	for (int i = 0; i < 7; i++)
+	for (auto iter=currencies_.begin();iter!=currencies_.end();++iter)
 	{
-		delete currencies_[i];
+		delete iter->second;
 	}
 }

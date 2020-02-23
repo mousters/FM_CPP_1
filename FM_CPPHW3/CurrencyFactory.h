@@ -2,13 +2,14 @@
 #define CurrencyFactory_H
 #include "Currency.h"
 #include <iostream>
+#include <map>
 using namespace std;
 
 /*
 Change #2: relocate Currency object creation to a class
 (CurrencyFactory)
 */
-enum CurrencyType { USD = 0, EUR = 1, GBP = 2, CAD = 3, AUD = 4, JPY = 5, RMB = 6 };
+//enum CurrencyType { USD = 0, EUR = 1, GBP = 2, CAD = 3, AUD = 4, JPY = 5, RMB = 6 };
 class CurrencyFactory
 {
 public:
@@ -18,9 +19,10 @@ public:
 	~CurrencyFactory();
 private:
 	/*
-	change #2, new currencyfactory constructor
+	change #6 
+	use a std::map to store currency objects
 	*/
-	Currency* currencies_[7];
+	map <int, Currency*> currencies_;
 
 };
 
