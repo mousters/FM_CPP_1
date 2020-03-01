@@ -2,6 +2,7 @@
 using namespace std;
 #include "Option.h"
 #include "EuropeanCall.h"
+#include "EuropeanPut.h"
 int main()
 {
 	cout << "Call section" << endl;
@@ -25,7 +26,7 @@ int main()
 	v = 0.4;
 	K = 120;
 	T = 2;
-	EuropeanCall p1(K, T);
+	EuropeanPut p1(K, T);
 	cout << "Put -- Price: " << p1.Price(S0, r, v) <<
 		", Delta: " << p1.Delta(S0, r, v) <<
 		", Gamma: " << p1.Gamma(S0, r, v) << endl;
