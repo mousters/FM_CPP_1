@@ -12,7 +12,7 @@ double EuropeanPut::Price(double S0, double r, double v)
 {
 	double d_1 = this->d1(S0, r, v);
 	double d_2 = this->d2(S0, r, v);
-	double v_put = K_ *exp(-r*T_)* this->cdf(-d_1) - S0*this->cdf(-d_1);
+	double v_put = K_ *exp(-r*T_)* this->cdf(-d_2) - S0*this->cdf(-d_1);
 	return v_put;
 }
 double EuropeanPut::Delta(double S0, double r, double v)
