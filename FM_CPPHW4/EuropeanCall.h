@@ -5,7 +5,6 @@
 #include <map>
 using namespace std;
 #define _USE_MATH_DEFINES
-#include <math.h>
 #include <cmath>
 
 

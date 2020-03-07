@@ -1,0 +1,6 @@
+﻿  Currency.cpp
+  CurrencyFactory.cpp
+  Homework3_test.cpp
+c:\users\david mou\desktop\github\fm_cpp_1\fm_cpphw3\homework3_test.cpp(41): warning C4101: 'e': unreferenced local variable
+  Generating Code...
+  FM_CPPHW3.vcxproj -> C:\Users\David Mou\Desktop\GITHUB\FM_CPP_1\x64\Debug\FM_CPPHW3.exe
