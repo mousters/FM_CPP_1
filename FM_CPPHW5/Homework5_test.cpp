@@ -15,17 +15,15 @@ int main()
 	double K = 100;
 	double T = 2;
 	EuropeanCall c1(K, T);
-	cout << "Call -- Price: " << c1.Price(S0, r, v) <<
-		", Delta: " << c1.Delta(S0, r, v) <<
-		", Gamma: " << c1.Gamma(S0, r, v) << endl;
-	cout << "Call -- Price: " << MC1.Price(c1, S0, v, r, 1000000) << endl;
 
-
+	cout << "Call -- Price: (10000 iteration) " << MC1.Price(c1, S0, v, r, 10000) << endl;
+	cout << "Call -- Price: (100000 iteration) " << MC1.Price(c1, S0, v, r, 100000) << endl;
+	cout << "Call -- Price: (1000000 iteration) " << MC1.Price(c1, S0, v, r, 1000000) << endl;
 	cout << "Put section" << endl;
 	EuropeanPut p1(K, T);
-	cout << "Put -- Price: " << p1.Price(S0, r, v) <<
-		", Delta: " << p1.Delta(S0, r, v) <<
-		", Gamma: " << p1.Gamma(S0, r, v) << endl;
-	cout << "Put -- Price: " << MC1.Price(p1, S0, v, r, 1000000) << endl;
+	
+	cout << "Put -- Price: (10000 iteration)" << MC1.Price(p1, S0, v, r, 10000) << endl;
+	cout << "Put -- Price: (100000 iteration)" << MC1.Price(p1, S0, v, r, 100000) << endl;
+	cout << "Put -- Price: (1000000 iteration)" << MC1.Price(p1, S0, v, r, 1000000) << endl;
 	return 0;
 }
