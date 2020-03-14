@@ -118,12 +118,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AmericanCall.h" />
+    <ClInclude Include="AmericanPut.h" />
     <ClInclude Include="BinomialTree.h" />
     <ClInclude Include="EuropeanCall.h" />
     <ClInclude Include="EuropeanPut.h" />
     <ClInclude Include="Option.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AmericanCall.cpp" />
+    <ClCompile Include="AmericanPut.cpp" />
     <ClCompile Include="BionomialTree.cpp" />
     <ClCompile Include="EuropeanCall.cpp" />
     <ClCompile Include="EuropeanPut.cpp" />

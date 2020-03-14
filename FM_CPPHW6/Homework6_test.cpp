@@ -3,7 +3,10 @@ using namespace std;
 #include "Option.h"
 #include "EuropeanCall.h"
 #include "EuropeanPut.h"
+#include "AmericanCall.h"
+#include "AmericanPut.h"
 #include "BinomialTree.h"
+#include <algorithm>
 
 int main()
 {
@@ -16,16 +19,19 @@ int main()
 
 	int N = 1000;
 	EuropeanCall c1(K, T);
-
-	cout << "Call -- Price:  " << c1.Price(S0,r,v) << endl;
 	EuropeanPut p1(K, T);
-
-	cout << "Call -- Price: " << p1.Price(S0, r, v) << endl;
+	AmericanCall c2(K, T);
+	AmericanPut p2(K, T);
 	
 	BinomialTree t1(S0, r, v, T, N);
-	cout << "Call -- Price: " << t1.Price(c1) << endl;
+	cout << "European Call -- Price: " << t1.Price(c1) << endl;
 
-	cout << "Call -- Price: " << t1.Price(p1) << endl;
+	cout << "European Put -- Price: " << t1.Price(p1) << endl;
+
+	cout << "American Call -- Price: " << t1.Price(c2) << endl;
+
+	cout << "American Put -- Price: " << t1.Price(p2) << endl;
+
 
 	return 0;
 }

@@ -28,7 +28,7 @@ public:
 	virtual double Delta(double S0, double r, double v) = 0;
 	virtual double Gamma(double S0, double r, double v) = 0;
 	virtual double GetExpirationPayoff(double ST) const = 0;
-	virtual double GetIntermediatePayoff(double St, double discountedExpectedPayoff) const = 0;
+	virtual double GetIntermediatePayoff(double St, double discountedExpectedPayoff) const= 0;
 
 
 protected:

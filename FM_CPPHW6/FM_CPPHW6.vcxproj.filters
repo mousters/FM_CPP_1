@@ -27,6 +27,12 @@
     <ClInclude Include="EuropeanPut.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AmericanCall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AmericanPut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Option.cpp">
@@ -42,6 +48,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Homework6_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AmericanCall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AmericanPut.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
