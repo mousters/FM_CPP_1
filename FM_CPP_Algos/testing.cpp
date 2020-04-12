@@ -9,6 +9,9 @@ using namespace std;
 #include "Circle.h"
 #include "Stock.h"
 
+
+
+
 double Sorter::arr[] = { 64, 34, 25, 12, 22, 11, 90 };
 int Sorter::n = 7;
 int main()
@@ -48,5 +51,9 @@ int main()
 	Stock APPL("APPL", 800.2);
 	Stock AMZ("AMZ", 900.12);
 	cout << "I can buy this many apple shares with 10k " << APPL.buy_shares(10000) << endl;
+
+	cout << 1 / 2 << endl;
+
+
 	return 0;
 }
